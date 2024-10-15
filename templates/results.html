@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+</head>
+<body>
+<h1> Contacts in your records </h1>
+<table border ="1" >
+  <tr>
+    <th>Name</th>
+    <th>Contact</th>
+    <th>City</th>
+  </tr>
+  {% for i in contacts %}
+  <tr>
+    <td>{{i[0]}}</td>
+    <td>{{i[1]}}</td>
+    <td>{{i[2]}}</td>
+
+  </tr>
+  {% endfor %}
+</table>
+<a href="/profile">Profile</a>
+<a href="/logout">Logout</a>
+</body>
+</html>

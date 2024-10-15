@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            margin-top: 200px;
+            margin-bottom: 40px;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container form input[type="submit"] {
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .container form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Address-Book</h1>
+
+        <form action="/login">
+            <input type="submit" value="Sign In" name="signin">
+        </form>
+
+        <form action="/register">
+            <input type="submit" value="Sign Up" name="signup">
+        </form>
+    </div>
+</body>
+</html>

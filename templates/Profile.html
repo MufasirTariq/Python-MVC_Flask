@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .message {
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/displaycontact">Display Contact</a>
+        <a href="/addcontact">Add Contact</a>
+        <a href="/deletecontact">Delete Contact</a>
+        <a href="/searchcontact">Search Contact</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <div class="content">
+        <h1>{{ email }}</h1>
+
+        <div class="message">
+            {{msg}}
+        </div>
+    </div>
+</body>
+</html>

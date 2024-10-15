@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+</head>
+<body style="text-align: center">
+<h1>Add Contacts Details</h1>
+<form action="addcontact_form" method="POST">
+
+  <label>Name</label><br>
+  <input type="text" name="name"><br>
+  <br>
+  <label>Number</label><br>
+  <input type="text" name="mobile"><br>
+  <br>
+  <label>City</label><br>
+  <input type="text" name="city"><br>
+  <br>
+  <input type="submit" value="Add">
+</form>
+{{msg}}
+<br>
+<a href="/profile">Profile</a>
+<a href="/logout">  Logout</a>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatcs</title>
+</head>
+<body>
+<h1> Contacts in your records </h1>
+<table border ="1" >
+  <tr>
+    <th>Name</th>
+    <th>Contact</th>
+    <th>City</th>
+    <th>Edit</th>
+  </tr>
+  {% for i in contacts %}
+  <tr>
+    <form action="/deletecontact_form" method="POST">
+    <td><input type="hidden" name="name" value="{{i[1]}}">   {{i[1]}}</td>
+    <td><input type="hidden" name="mobile" value="{{i[2]}}"> {{i[2]}}</td>
+    <td><input type="hidden" name="city" value="{{i[3]}}">   {{i[3]}}</td>
+    <td><input type="submit" value="Delete"></td>
+  </form>
+  </tr>
+  {% endfor %}
+</table>
+{{name}}{{msg}}
+<a href="/profile">Profile</a>
+<a href="/logout">Logout</a>
+
+
+</body>
+</html>
